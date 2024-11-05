@@ -1,0 +1,658 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body
+{
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* ----------------------------- Start-Nav --------------------------------- */
+
+
+nav.navbar .container-lg div.collapse ul li a
+{
+    position: relative;
+    width: fit-content;
+    font-size: 14px;
+    overflow: hidden;
+    color: black;
+}
+
+nav.navbar .container-lg div.collapse ul li a::after
+{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    top: 80%;
+    left: -100%;
+    transition: all .5s;
+}
+
+nav.navbar .container-lg div.collapse ul li a:hover::after
+{
+    left: 0%;
+}
+
+
+nav.navbar .container-lg div.collapse ul li a.active::after
+{
+    left: 0%;
+}
+
+
+body:has(#home:target) nav.navbar .container-lg div.collapse ul li a[href="#home"]::after,
+body:has(#about:target) nav.navbar .container-lg div.collapse ul li a[href="#about"]::after,
+body:has(#services:target) nav.navbar .container-lg div.collapse ul li a[href="#services"]::after,
+body:has(#works:target) nav.navbar .container-lg div.collapse ul li a[href="#works"]::after,
+body:has(#clients:target) nav.navbar .container-lg div.collapse ul li a[href="#clients"]::after,
+body:has(#team:target) nav.navbar .container-lg div.collapse ul li a[href="#team"]::after,
+body:has(#contact:target) nav.navbar .container-lg div.collapse ul li a[href="#contact"]::after
+{
+    left: 0%;
+}
+
+
+
+
+
+
+
+
+/* ----------------------------- End-Nav --------------------------------- */
+
+/* ----------------------------- Start-Header --------------------------------- */
+
+
+header
+{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/bg.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+header .home-content p.hel
+{
+    font-size: 50px;
+}
+
+header .home-content p.i-am
+{
+    font-size: 60px;
+}
+
+
+header .home-content ul li a
+{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+header .home-content ul li a i
+{
+    font-size: 14px;
+    width: 12px;
+    height: 12px;
+}
+
+
+
+
+
+
+
+
+/* ----------------------------- End-Header --------------------------------- */
+
+
+
+/* ----------------------------- Start-About --------------------------------- */
+
+section#about .container .row .col-lg-5 .image-conta .image-dotet
+{
+    background-image: url(../images/dots.png);
+    width: 80%;
+    height: 80%;
+    top: 30%;
+    left: 0%;
+}
+
+
+section#about .container .row .col-lg-7 .about-me-content .ui-ux
+{
+    letter-spacing: 1;
+}
+
+
+section#about .container .row .col-lg-7 .about-me-content div.progress
+{
+    height: 25px;
+}
+
+.Down
+{
+    transition: all .3s;
+}
+
+
+.Down:hover
+{
+    background-color: white;
+    color: black;
+}
+
+
+
+
+/* ----------------------------- End-About --------------------------------- */
+
+
+/* ----------------------------- Start-Services --------------------------------- */
+
+
+
+section#services .container p.titlle
+{
+    width: fit-content;
+    margin: 0 auto;
+    position: relative;
+}
+
+section#services .container p.titlle span
+{
+    position: relative;
+    z-index: 1;
+}
+
+
+section#services .container p.titlle::after
+{
+    content: "";
+    position: absolute;
+    top: 34%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 80%;
+    background-image: url(../images/dots.png);
+}
+
+
+section#services .container .container .row .col-lg-4 i
+{
+    transition: all .4s;
+}
+
+
+section#services .container .container .row .col-lg-4:hover i
+{
+    color: white;
+    background-color: black !important;
+}
+
+
+
+
+
+
+
+/* ----------------------------- End-Services --------------------------------- */
+
+
+
+/* ----------------------------- Start-Works --------------------------------- */
+
+
+section#works .container p.titlle
+{
+    width: fit-content;
+    margin: 0 auto;
+    position: relative;
+}
+
+section#works .container p.titlle span
+{
+    position: relative;
+    z-index: 1;
+}
+
+
+section#works .container p.titlle::after
+{
+    content: "";
+    position: absolute;
+    top: 34%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 80%;
+    background-image: url(../images/dots.png);
+}
+
+
+
+
+
+.nav-pills .nav-link
+{
+    margin: .5rem 0rem;
+    padding: 0px;
+}
+
+
+.nav-pills .nav-link.active
+{
+    background-color: transparent;
+    
+}
+
+
+section#works .container ul li  
+{
+    position: relative;
+    width: fit-content;
+    overflow: hidden;
+}
+
+section#works .container ul li button
+{
+    position: relative;
+}
+
+section#works .container ul li button::after
+{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    top: 100%;
+    left: -100%;
+    transition: all .5s;
+}
+
+section#works .container ul li:hover button::after
+{
+    left: 0%;
+}
+
+
+section#works .container ul li  button.nav-link.active::after
+{
+    
+    left: 0%;
+}
+
+
+
+
+section#works .container .tab-content .tab-pane .container .row .col-lg-4 .image-porto .layer
+{
+    position: absolute;
+    inset: 15px 5px 0px 5px;
+    opacity: 0;
+    transition: all .6s;
+}
+
+
+section#works .container .tab-content .tab-pane .container .row .col-lg-4 .image-porto .layer h6
+{
+    transform: translateY(-15px);
+    opacity: 0;
+    transition: all .6s ;
+}
+
+section#works .container .tab-content .tab-pane .container .row .col-lg-4 .image-porto .layer:hover
+{
+    opacity: .9;
+    inset: 5px
+}
+
+
+section#works .container .tab-content .tab-pane .container .row .col-lg-4 .image-porto .layer:hover h6
+{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+
+
+section#works .container .tab-content .tab-pane .container .row .col-lg-4 .image-porto .layer a i
+{
+    font-size: 14px;
+}
+
+section#works .container .tab-content .tab-pane .container .row .col-lg-4 .image-porto .layer a
+{
+    color: white;
+}
+
+section#works .container .tab-content .tab-pane .container .row .col-lg-4 .image-porto .layer a:hover
+{
+    color: black;
+}
+
+section#works .container .tab-content .tab-pane .container .row .col-lg-4 .image-porto .layer a:hover i
+{
+    background-color: white !important;
+}
+
+
+
+
+/* ----------------------------- End-Works ----------------------------------- */
+
+
+
+
+
+/* ----------------------------- Start-Clints ----------------------------------- */
+
+
+section#clients .container p.titlle
+{
+    width: fit-content;
+    margin: 0 auto;
+    position: relative;
+}
+
+section#clients .container p.titlle span
+{
+    position: relative;
+    z-index: 1;
+}
+
+
+section#clients .container p.titlle::after
+{
+    content: "";
+    position: absolute;
+    top: 34%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 80%;
+    background-image: url(../images/dots.png);
+}
+
+
+
+.carousel-indicators [data-bs-target]
+{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #869791;
+
+}
+
+
+
+section#clients .container .carousel-item img
+{
+    width: 100px;
+    border-radius: 50%;
+}
+
+
+section#clients .container .carousel-item p:not(p.enva)
+{
+    max-width: 980px;
+}
+
+section#clients .container .carousel-item p.enva
+{
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------- End-Clints ----------------------------------- */
+
+
+
+
+/* ----------------------------- Start-team ----------------------------------- */
+
+
+section#team .container p.titlle
+{
+    width: fit-content;
+    margin: 0 auto;
+    position: relative;
+}
+
+section#team .container p.titlle span
+{
+    position: relative;
+    z-index: 1;
+}
+
+
+section#team .container p.titlle::after
+{
+    content: "";
+    position: absolute;
+    top: 34%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 80%;
+    background-image: url(../images/dots.png);
+}
+
+
+section#team .container .row .col-lg-4 .our-team-card{
+    background-color: #5b5b5b ;
+}
+
+
+section#team .container .row .col-lg-4 .our-team-card .our-team-images img
+{
+    transition: all .5s;
+}
+
+
+section#team .container .row .col-lg-4 .our-team-card .our-team-images .our-team-layer
+{
+    background-color: white;
+    inset: 5px;
+    transform: rotateY(180deg) scale(.4);
+    opacity: 0;
+    transition: all .5s;
+
+}
+
+section#team .container .row .col-lg-4 .our-team-card:hover .our-team-images .our-team-layer
+{
+    transform: rotateY(0deg) scale(1);
+    opacity: 1;
+}
+
+
+section#team .container .row .col-lg-4 .our-team-card .our-team-images .our-team-layer a
+{
+    color: white;
+    background-color: black;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: all .5s;
+}
+
+
+section#team .container .row .col-lg-4 .our-team-card .our-team-images .our-team-layer a:hover
+{
+    color: black;
+    background-color: white;
+}
+
+
+section#team .container .row .col-lg-4 .our-team-card .our-team-images:hover img
+{
+    transform: scale(1.1);
+}
+
+
+
+
+
+/* ----------------------------- End-team ----------------------------------- */
+
+
+
+
+
+/* ----------------------------- Start-Contact ----------------------------------- */
+
+
+section#contact .container p.titlle
+{
+    width: fit-content;
+    margin: 0 auto;
+    position: relative;
+}
+
+section#contact .container p.titlle span
+{
+    position: relative;
+    z-index: 1;
+}
+
+
+section#contact .container p.titlle::after
+{
+    content: "";
+    position: absolute;
+    top: 34%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 80%;
+    background-image: url(../images/dots.png);
+}
+
+
+section#contact .container-lg .row .col-lg-4 div.text-center span
+{
+    width: 25px;
+    height: 25px;
+    padding: 30px;
+    transition: all .5s;
+}
+
+
+section#contact .container-lg .row .col-lg-4 div.text-center:hover span
+{
+    color: white;
+    background-color: black !important;
+}
+
+textarea
+{
+    resize: both;
+    border: none;
+
+}
+
+section#contact .container-lg .buttoon
+{
+    font-size: 13px;
+    transition: all .5s;
+}
+
+
+section#contact .container-lg .buttoon:hover
+{
+    background-color: white !important;
+    color: black;
+}
+
+
+
+/* ----------------------------- End-Contact ----------------------------------- */
+
+
+
+/* ----------------------------- Start-footer ----------------------------------- */
+
+footer span
+{
+    font-size: 13px;
+}
+
+
+
+
+
+
+
+
+/* ----------------------------- End-footer ----------------------------------- */
+
+
+/* ======================================= Media ============================================== */
+
+
+@media screen and (max-width:991.5px) {
+
+    /* ----------------------------- Start-Nav --------------------------------- */
+
+    nav.navbar .container-lg div.collapse ul li
+    {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+
+
+
+nav.navbar .container-lg div.collapse ul li a::after
+{
+    content: "";
+    width: 0%;
+    height: 0px;
+    background-color: transparent;
+    top: 100%;
+    left: 0;
+}
+
+
+
+
+
+
+
+
+
+/* ----------------------------- End-Nav --------------------------------- */
+    
+}
+
+
+
+
+
+
+
